@@ -2,7 +2,7 @@
   "name": "node-typescript-boilerplate",
   "version": "1.0.0",
   "description": "A boilerplate to jump start Node.js application in TypeScript with ESLint included.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsc -b .",
