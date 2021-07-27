@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "A boilerplate to jump start Node.js application in TypeScript with ESLint included.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsc -b .",
+    "start": "run-s --silent clean build && node ."
+  },
   "author": "Volcie",
   "license": "MIT",
   "devDependencies": {
@@ -14,7 +18,9 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-prettier": "^3.4.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
     "typescript": "^4.3.5"
   }
 }
