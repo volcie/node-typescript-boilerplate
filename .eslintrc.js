@@ -10,6 +10,7 @@ module.exports = {
     ecmaVersion: 12,
   },
   plugins: ["@typescript-eslint", "prettier"],
+  ignorePatterns: ["dist/**/*.js"],
   rules: {
     "no-console": "off",
     "prettier/prettier": ["error", { singleQuote: false }],
