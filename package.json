@@ -6,7 +6,9 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsc -b .",
-    "start": "run-s --silent clean build && node ."
+    "start": "run-s --silent clean build && node .",
+    "dev": "run-s --silent clean watch",
+    "watch": "tsc-watch --onSuccess \"node .\""
   },
   "author": "Volcie",
   "license": "MIT",
